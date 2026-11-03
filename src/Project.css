@@ -1,0 +1,221 @@
+.project {
+  min-height: 700px;
+  height: auto;
+  background: linear-gradient(110deg, #080d12 55%, #003b78);
+  width: 100%;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+  border: 2px solid white;
+  box-shadow:
+    0 0 10px white,
+    0 0 30px white,
+    0 0 30px white,
+    0 0 30px rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  position: relative;
+  /* display: flex; */
+  /* flex-direction: row; */
+}
+
+.project h1 {
+  text-align: center;
+  color: #00bfff;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.project h1:hover {
+  color: white;
+  text-shadow:
+    0 0 10px #00bfff,
+    0 0 20px #00bfff;
+}
+
+.project h3 {
+  color: white;
+  /* text-align: left; */
+  transition: 0.3s;
+  padding-top: 0;
+  white-space: nowrap;
+  margin-left: 230px;
+}
+
+.project h3:hover {
+  color: #00bfff;
+  text-decoration: underline;
+  text-decoration-color: #00bfff;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+.description {
+  width: 500px;
+  height: 300px;
+  margin-top: 20px;
+  border: 2px solid white;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;
+}
+
+.w {
+  width: 500px;
+  height: 350px;
+  margin-top: 20px;
+  border: 2px solid white;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 250px;
+  align-items: flex-start;
+}
+.description p,
+.w p {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 20px;
+  margin: 0;
+  text-align: justify;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.h {
+  color: white;
+  text-align: right;
+  transition: 0.3s;
+  padding-top: 0;
+  white-space: nowrap;
+  margin-right: 300px;
+}
+.project h2:hover {
+  color: #00bfff;
+  text-decoration: underline;
+  text-decoration-color: #00bfff;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+.pr {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.t {
+  color: white;
+  text-align: left;
+  transition: 0.3s;
+  top: 150px;
+  white-space: nowrap;
+  margin: 0;
+  position: absolute;
+  font-size: clamp(16px, 3vw, 24px);
+  white-space: nowrap;
+  margin-left: 230px;
+}
+.description:hover,
+.w:hover {
+  border-color: white;
+  box-shadow:
+    0 0 10px white,
+    0 0 20px white,
+    0 0 30px white;
+  transition: 0.3s ease;
+}
+
+.github-btn {
+  display: flex;
+  flex-direction: row;
+  background: #00bfff;
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0 20px 10px;
+  transition: 0.3s ease;
+  margin-left: 220px;
+  margin-top: 50px;
+}
+
+.github-btn:hover {
+  background: white;
+  color: #003b78;
+  box-shadow: 0 0 15px red;
+}
+
+@media (max-width: 768px) {
+  .project {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .pr {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .t,
+  .h {
+    position: static;
+    text-align: center;
+    margin: 15px 0;
+    white-space: normal;
+  }
+
+  .description,
+  .w {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    min-height: 300px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .description p,
+  .w p {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project {
+    padding: 15px;
+  }
+
+  .project h1 {
+    font-size: 26px;
+  }
+
+  .t,
+  .h {
+    font-size: 18px;
+  }
+
+  .description,
+  .w {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .description p,
+  .w p {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 12px;
+  }
+
+  .github-btn {
+    font-size: 11px;
+    padding: 5px 10px;
+    margin: 0 12px 12px;
+  }
+}

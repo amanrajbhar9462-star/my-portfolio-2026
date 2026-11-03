@@ -1,0 +1,61 @@
+.big-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: pink;
+
+  width: 100%;
+  min-height: 100px;
+  box-sizing: border-box;
+}
+
+.list-itm {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+}
+.logo-img {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+h2 {
+  padding-left: 10px;
+  font-size: 20px;
+  margin: 0;
+}
+
+.logo-img img {
+  height: 80px;
+  width: auto;
+}
+.logo-img h2 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+.list-itm li {
+  cursor: pointer;
+}
+
+.logo-img h2 {
+  transition: all 0.3s ease;
+}
+
+.logo-img h2:hover {
+  text-shadow:
+    0 0 2px #fff,
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #ccc,
+    2px 2px 3px #333;
+  cursor: pointer;
+}

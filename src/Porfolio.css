@@ -1,0 +1,167 @@
+.name-div {
+  display: flex;
+  margin-top: 50px;
+
+  height: 300px;
+}
+
+h1 {
+  padding-left: 70px;
+  font-size: 100px;
+}
+
+.paragraph {
+  padding-left: 150px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.img {
+  background-color: whitesmoke;
+}
+
+.tool {
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  padding-top: 150px;
+  color: black;
+  font-size: 30px;
+}
+
+.div1 {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 300px;
+  border: 4px yellow;
+  background-color: palegreen;
+  margin-left: 80px;
+  border-radius: 10px;
+}
+
+.words {
+  display: flex;
+  text-align: center;
+  margin-left: 70px;
+  font-weight: bold;
+  font-style: italic;
+  color: red;
+}
+
+.div2 {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 300px;
+  border: 4px;
+  background-color: palegreen;
+  margin-left: 100px;
+  border-radius: 10px;
+}
+
+.web-img {
+  height: 100px;
+  width: 50px;
+  margin-left: 100px;
+}
+
+.word2 {
+  display: flex;
+  text-align: center;
+  margin-left: 75px;
+  font-style: italic;
+  color: red;
+}
+
+.div3 {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 300px;
+  border: 4px;
+  background-color: palegreen;
+  margin-right: 80px;
+  margin-left: 80px;
+  border-radius: 10px;
+}
+
+.word3 {
+  display: flex;
+  text-align: center;
+  margin-left: 70px;
+  font-style: italic;
+  color: red;
+}
+
+.parent-div {
+  display: flex;
+  flex-direction: row;
+  margin-top: 150px;
+  justify-content: center;
+}
+
+.language-logo {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 80px;
+}
+
+.language-logo li img {
+  width: 200px;
+  height: 180px;
+  object-fit: contain;
+  margin-left: 60px;
+}
+.parent {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+}
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.boy-image {
+  height: 150px;
+  width: 80px;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+.rs-design {
+  height: 150px;
+  width: 100px;
+  margin-left: 80px;
+  margin-top: 50px;
+}
+.space {
+  height: 140px;
+  width: 80px;
+  margin-left: 77px;
+  margin-top: 70px;
+}
+.big-img {
+  height: 100%;
+  width: 100%;
+}
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.img6 {
+  margin-left: 500px;
+  height: 190px;
+}

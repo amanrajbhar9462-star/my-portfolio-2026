@@ -1,0 +1,71 @@
+h1 {
+  font-size: 50px;
+  color: #00bfff;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.home-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding: 15px 20px;
+
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  border-bottom: 3px solid white;
+  background: linear-gradient(110deg, #080d12 55%, #003b78);
+  box-sizing: border-box;
+  /* border-radius: 10px; */
+}
+
+.home-navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 12px;
+  transition: 0.3s;
+}
+
+.home-navbar a:hover,
+.home-navbar a.active {
+  color: #00bfff;
+  border-bottom: 2px solid #00bfff;
+}
+@media (max-width: 768px) {
+  .home-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 8px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #080d12;
+    z-index: 99999;
+  }
+
+  .home-navbar a {
+    font-size: 12px;
+    padding: 5px;
+    white-space: nowrap;
+  }
+}
+#about,
+#education,
+#skill,
+#project,
+#contact {
+  scroll-margin-top: 100px;
+}

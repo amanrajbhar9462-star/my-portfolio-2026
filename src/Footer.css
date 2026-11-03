@@ -1,0 +1,176 @@
+.large_div {
+  display: flex;
+  min-height: 600px;
+  height: auto;
+  background: linear-gradient(110deg, #080d12 55%, #003b78);
+
+  box-sizing: border-box;
+  transition: 0.3s ease;
+
+  border: 2px solid white;
+  box-shadow:
+    0 0 10px white,
+    0 0 30px white,
+    0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+.last_div {
+  flex: 1;
+
+  padding: 20px;
+}
+
+.heading {
+  padding-left: 590px;
+  font-size: 3em;
+  color: #00bfff;
+  cursor: pointer;
+  transition: text-shadow 0.3s ease;
+}
+
+.heading:hover {
+  color: white !important;
+  text-shadow:
+    0 0 10px #00bfff,
+    0 0 20px #00bfff,
+    0 0 30px #00bfff !important;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.my_form {
+  padding-top: 20px;
+  padding-left: 500px;
+  color: white;
+}
+.my_form input {
+  width: 350px;
+  height: 45px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.my_form3 {
+  margin-top: 50px;
+  padding-left: 500px;
+  color: white;
+}
+.eml {
+  padding-left: 500px;
+  padding-top: 40px;
+  color: white;
+}
+.eml input {
+  width: 350px;
+  height: 45px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.my_form3 textarea {
+  width: 350px;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  text-align: left;
+  vertical-align: top;
+  resize: none;
+}
+.my_form3 textarea::placeholder {
+  color: gray;
+  opacity: 1;
+}
+
+.my_form textarea {
+  width: 350px;
+  height: 30px;
+}
+
+@media (max-width: 768px) {
+  .large_div {
+    height: auto;
+    min-height: 500px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+  }
+
+  .last_div {
+    width: 100%;
+    margin-top: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .heading {
+    padding-left: 0;
+    text-align: center;
+    font-size: 45px;
+  }
+
+  .my_form,
+  .eml,
+  .my_form3 {
+    padding-left: 0;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .my_form input,
+  .eml input,
+  .my_form3 input {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .large_div {
+    height: auto;
+    min-height: auto;
+    margin-top: 30px;
+    padding: 20px 15px;
+  }
+
+  .last_div {
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .heading {
+    font-size: 32px;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+
+  .my_form,
+  .eml,
+  .my_form3 {
+    padding: 0;
+    margin-bottom: 25px;
+  }
+
+  .my_form input,
+  .eml input {
+    width: 100%;
+    height: 45px;
+  }
+
+  .my_form3 input {
+    width: 100%;
+    height: 120px;
+  }
+}
+
+.heading {
+  transition: text-shadow 0.3s ease;
+}
+
+.heading:hover {
+  text-shadow:
+    2px 2px 5px #000,
+    4px 4px 10px #333,
+    0 0 15px #000;
+  cursor: pointer;
+}

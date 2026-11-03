@@ -1,0 +1,159 @@
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(110deg, #080d12 55%, #003b78);
+  color: white;
+  font-family: Arial, sans-serif;
+  /* overflow: hidden; */
+  /* padding-top: 0; */
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  min-height: 80vh;
+  margin: auto;
+  padding: 40px 5%;
+  gap: 40px;
+}
+
+.home-text {
+  flex: 1;
+  max-width: 720px;
+}
+
+.home-text h3 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.home-text h3 span {
+  color: #00bfff;
+}
+
+.home-text h1 {
+  font-size: 4em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 5px;
+  padding-top: 10px;
+  white-space: nowrap;
+  display: block;
+}
+
+.home-text h1 span {
+  color: #00bfff;
+  /* text-shadow: 0 0 20px rgba(0, 191, 255, 0.5);*/
+}
+
+.home-text p {
+  font-size: 19px;
+  line-height: 1.7;
+  color: #e0e0e0;
+  max-width: 650px;
+}
+
+.home-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+}
+
+.image-circle {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border: 8px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow:
+    0 0 15px white,
+    0 0 35px #008cff,
+    0 0 70px #006eff;
+}
+
+.image-circle img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+}
+.image-circle {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border: 8px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease;
+}
+
+.first-img {
+  opacity: 1;
+}
+
+.second-img {
+  opacity: 0;
+}
+
+.image-circle:hover .first-img {
+  opacity: 0;
+}
+
+.image-circle:hover .second-img {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 35px 20px;
+  }
+
+  .home-text h3 {
+    font-size: 22px;
+  }
+
+  .home-text h1 {
+    font-size: 22px;
+    /*white-space: normal;*/
+  }
+
+  .home-text p {
+    font-size: 16px;
+  }
+
+  .home-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .home-buttons a {
+    font-size: 15px;
+    padding: 12px 18px;
+  }
+
+  .home-image {
+    margin-top: 25px;
+  }
+
+  .image-circle {
+    width: min(75vw, 320px);
+  }
+}
