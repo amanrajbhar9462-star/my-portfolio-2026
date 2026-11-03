@@ -132,6 +132,12 @@
     margin-top: 30px;
     padding: 20px 15px;
   }
+  .my_form3 textarea {
+    width: 100%;
+    max-width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+  }
 
   .last_div {
     margin-top: 20px;
