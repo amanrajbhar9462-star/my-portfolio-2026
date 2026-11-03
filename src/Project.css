@@ -50,15 +50,16 @@
 
 .description {
   width: 500px;
-  height: 300px;
+  height: 350px;
   margin-top: 20px;
   border: 2px solid white;
   border-radius: 15px;
   box-sizing: border-box;
   color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-left: 100px;
+  align-items: center;
 }
 
 .w {
@@ -137,10 +138,8 @@
   border-radius: 8px;
   font-size: 12px;
   font-weight: bold;
-  margin: 0 20px 10px;
+  margin: 50px auto 10px;
   transition: 0.3s ease;
-  margin-left: 220px;
-  margin-top: 50px;
 }
 
 .github-btn:hover {

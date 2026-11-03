@@ -17,6 +17,14 @@ function Project() {
             and gain practical experience in building user-friendly web
             interfaces.
           </p>
+          <a
+            href="https://my-portfolio-2026-six-taupe.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="github-btn"
+          >
+            Go 👈
+          </a>
         </div>
 
         <div className="w">
