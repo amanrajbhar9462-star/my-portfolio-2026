@@ -98,7 +98,6 @@
   box-shadow: 0 0 15px #00bfff;
 }
 
-/* Tablet Responsive */
 @media (max-width: 768px) {
   .large_div {
     min-height: 550px;
@@ -115,11 +114,10 @@
   }
 }
 
-/* Mobile Responsive */
 @media (max-width: 480px) {
   .large_div {
     min-height: auto;
-    margin-top: 20px;
+
     padding: 15px 10px;
   }
 
