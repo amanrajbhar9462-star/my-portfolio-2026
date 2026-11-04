@@ -44,22 +44,22 @@ h1 {
 @media (max-width: 768px) {
   .home-navbar {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: center;
-    gap: 12px;
-    padding: 12px 8px;
+    gap: 0;
+    padding: 12px 5px;
+    width: 100%;
     position: sticky;
     top: 0;
-    width: 100%;
-    background: #080d12;
-    z-index: 99999;
+    box-sizing: border-box;
   }
 
   .home-navbar a {
-    font-size: 12px;
-    padding: 5px;
+    font-size: clamp(7px, 2.5vw, 12px);
+    padding: 5px 0;
     white-space: nowrap;
+    flex-shrink: 1;
   }
 }
 #about,
