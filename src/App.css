@@ -69,3 +69,20 @@ h1 {
 #contact {
   scroll-margin-top: 100px;
 }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.home-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+
+.page-content {
+  width: 100%;
+  min-height: calc(100vh - 60px);
+}
