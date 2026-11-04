@@ -7,7 +7,7 @@ function Skill() {
     { name: "JavaScript", percentage: 80, className: "d3" },
     { name: "SQL", percentage: 65, className: "d4" },
     { name: "React", percentage: 60, className: "d5" },
-    { name: "Python", percentage: 70, className: "d6" },
+    { name: "Python", percentage: 40, className: "d6" },
     { name: "C", percentage: 80, className: "d7" },
     {
       name: "Responsive Design",
@@ -15,6 +15,7 @@ function Skill() {
 
       className: "d8",
     },
+    { name: "WordPress", percentage: 55, className: "d9" },
   ];
 
   return (

@@ -4,17 +4,6 @@ import Oip from "./assets/Oip.png";
 function Home() {
   return (
     <div className="home-container">
-      {/* <nav className="home-navbar"> 
-        <a href="#home" className="active">
-          HOME
-        </a>
-        <a href="#about">ABOUT</a>
-        <a href="#education">EDUCATION</a>
-        <a href="#skill">SKILL</a>
-        <a href="#project">PROJECT</a>
-        <a href="#contact">CONTACT</a>
-      </nav>*/}
-
       <div className="home-content">
         <div className="home-text">
           <h3>
