@@ -20,7 +20,7 @@ function Home() {
             and visually appealing websites.
           </p>
           <div className="home-buttons">
-            <a href="/resume.pdf" download>
+            <a href="/resume.pdf" download="Aman_CV.pdf">
               Download CV
             </a>
           </div>
