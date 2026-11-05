@@ -13,21 +13,30 @@ function App() {
   return (
     <div className="main-container">
       <nav className="home-navbar">
-        {["home", "about", "education", "skill", "project", "contact"].map(
-          (page) => (
-            <a
-              key={page}
-              href="#"
-              className={activePage === page ? "active" : ""}
-              onClick={(e) => {
-                e.preventDefault();
-                setActivePage(page);
-              }}
-            >
-              {page.toUpperCase()}
-            </a>
-          ),
-        )}
+        {[
+          "home",
+          "about",
+          "education",
+          "skill",
+          "project",
+          "contact",
+          "resume",
+        ].map((page) => (
+          <a
+            key={page}
+            href="#"
+            className={activePage === page ? "active" : ""}
+            onClick={(e) => {
+              e.preventDefault();
+              setActivePage(page);
+            }}
+          >
+            {page.toUpperCase()}
+          </a>
+        ))}
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+          RESUME
+        </a>
       </nav>
 
       <div className="page-content">
