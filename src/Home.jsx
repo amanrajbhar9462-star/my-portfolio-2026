@@ -19,6 +19,11 @@ function Home() {
             JavaScript, and React.js. I love creating responsive, user-friendly,
             and visually appealing websites.
           </p>
+          <div className="home-buttons">
+            <a href="/resume.pdf" download>
+              Download CV
+            </a>
+          </div>
         </div>
 
         <div className="home-image">
