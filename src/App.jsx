@@ -35,7 +35,7 @@ function App() {
             {page.toUpperCase()}
           </a>
         ))}
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+        <a href="/Aman.pdf" target="_blank" rel="noopener noreferrer">
           RESUME
         </a>
       </nav>
