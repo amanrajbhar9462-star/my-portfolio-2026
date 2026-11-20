@@ -3,6 +3,7 @@ import About from "./About";
 import "./App.css";
 import Contact from "./Contact";
 import Education from "./Education";
+import Experience from "./Experience";
 import Home from "./Home";
 import Project from "./Project";
 import Skill from "./Skill";
@@ -13,21 +14,27 @@ function App() {
   return (
     <div className="main-container">
       <nav className="home-navbar">
-        {["home", "about", "education", "skill", "project", "contact"].map(
-          (page) => (
-            <a
-              key={page}
-              href="#"
-              className={activePage === page ? "active" : ""}
-              onClick={(e) => {
-                e.preventDefault();
-                setActivePage(page);
-              }}
-            >
-              {page.toUpperCase()}
-            </a>
-          ),
-        )}
+        {[
+          "home",
+          "about",
+          "education",
+          "skill",
+          "experience",
+          "project",
+          "contact",
+        ].map((page) => (
+          <a
+            key={page}
+            href="#"
+            className={activePage === page ? "active" : ""}
+            onClick={(e) => {
+              e.preventDefault();
+              setActivePage(page);
+            }}
+          >
+            {page.toUpperCase()}
+          </a>
+        ))}
         <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
           RESUME
         </a>
@@ -38,6 +45,7 @@ function App() {
         {activePage === "about" && <About />}
         {activePage === "education" && <Education />}
         {activePage === "skill" && <Skill />}
+        {activePage === "experience" && <Experience />}
         {activePage === "project" && <Project />}
         {activePage === "contact" && <Contact />}
       </div>

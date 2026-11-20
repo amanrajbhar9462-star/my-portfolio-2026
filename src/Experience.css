@@ -1,0 +1,116 @@
+.ex {
+  min-height: 700px;
+  height: auto;
+  background: linear-gradient(110deg, #080d12 55%, #003b78);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+  border: 2px solid white;
+  box-shadow:
+    0 0 10px white,
+    0 0 30px white,
+    0 0 30px rgba(255, 255, 255, 0.5);
+  padding: 0 0 40px;
+  overflow-x: hidden;
+}
+.ex h1 {
+  font-size: 50px;
+  color: #00bfff;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.ex h1:hover {
+  color: white;
+  text-shadow:
+    0 0 10px #00bfff,
+    0 0 20px #00bfff;
+}
+.int h2 {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+  white-space: normal;
+  font-size: 24px;
+}
+
+.int {
+  width: 90%;
+  margin: 30px auto;
+  padding: 25px;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 140, 255, 0.15);
+}
+
+.int:hover {
+  border: 2px solid white;
+  /* text-shadow: */
+  /* 0 0 10px #00bfff, */
+  /* 0 0 20px #00bfff; */
+  /* border-color: #00bfff; */
+  box-shadow:
+    0 0 10px white,
+    0 0 20px white,
+    0 0 30px rgba(255, 255, 255, 0.5);
+}
+.st {
+  display: block;
+  color: #007bff;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.duration {
+  margin-bottom: 15px;
+}
+
+.int .description {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 10px;
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+.int h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.int ul {
+  padding-left: 25px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.int p {
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .int {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .int .description {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    text-align: left;
+  }
+}

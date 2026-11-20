@@ -1,7 +1,7 @@
 .me {
   display: flex;
   background: linear-gradient(110deg, #080d12 55%, #003b78);
-  min-height: 600px;
+  min-height: 700px;
   height: auto;
   box-sizing: border-box;
   flex-direction: column;
