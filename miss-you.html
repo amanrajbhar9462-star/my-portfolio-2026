@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secret Message</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #000;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: monospace;
+        overflow: hidden;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      h1 {
+        color: #00ff88;
+        font-size: 65px;
+        text-shadow:
+          0 0 10px #00ff88,
+          0 0 30px #00ff88;
+        animation: glow 1.5s infinite alternate;
+      }
+
+      p {
+        color: white;
+        margin-top: 20px;
+        font-size: 18px;
+        letter-spacing: 4px;
+      }
+
+      .heart {
+        font-size: 50px;
+        margin-top: 20px;
+        animation: beat 1s infinite;
+      }
+
+      @keyframes glow {
+        from {
+          opacity: 0.5;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes beat {
+        50% {
+          transform: scale(1.3);
+        }
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 38px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="message"></h1>
+      <p>EVERY SECOND, I THINK ABOUT YOU...</p>
+      <div class="heart">❤️</div>
+    </div>
+
+    <script>
+      const text = "MISS YOU";
+      let i = 0;
+
+      function typing() {
+        if (i < text.length) {
+          document.getElementById("message").innerHTML += text[i];
+          i++;
+          setTimeout(typing, 300);
+        }
+      }
+
+      typing();
+    </script>
+  </body>
+</html>
